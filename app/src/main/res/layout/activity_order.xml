@@ -68,12 +68,12 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="213dp"
+        android:layout_width="233dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Name"
+        android:inputType="textPersonName"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,9 +81,9 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
+        android:layout_width="233dp"
         android:layout_height="80dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="Address"
         android:inputType="textMultiLine"
@@ -94,22 +94,22 @@
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginStart="45dp"
         android:ems="10"
         android:hint="Phone"
         android:inputType="phone"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="wrap_content"
+        android:layout_width="233dp"
         android:layout_height="80dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="Note"
         android:inputType="textCapCharacters|textMultiLine"
@@ -175,6 +175,17 @@
         android:onClick="onRadioButtonClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nextDay" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintTop_toTopOf="@+id/editText3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
